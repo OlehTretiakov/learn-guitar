@@ -1,3 +1,136 @@
+@use 'normalize.scss'
 @use 'reset.scss'
-    
 
+$color-blue: #5290ea
+$color-orange: #f28b64
+$color-grey: #e2e2e2
+
+html
+    font-family: sans-serif
+.container
+    position: relative
+    max-width: 1180px
+    padding: 0 20px
+    margin: 0 auto
+.nav-menu
+    &__list
+        display: flex
+        gap: 64px
+        font-size: 18px
+        font-weight: 700
+.main-section
+    position: relative
+    padding-top: 20px
+    min-height: 800px   
+    background-color: #f0f0f0
+    overflow: hidden    
+    &__nav-container
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__content-container
+        display: flex
+        position: relative
+    &__first-elipse
+        position: absolute
+        top: 129px
+        right: 34px
+    &__second-elipse
+        position: absolute
+        right: -120px
+        top: 650px
+.left-wrapper
+    position: relative
+    &__img
+        position: relative
+        z-index: 100
+    &__rectangle
+        position: absolute
+        border-radius: 100px
+    &__rectangle-blue
+        top: 150px
+        left: -50px
+        transform: rotate(-64deg)
+        background-color: $color-blue
+        width: 565px
+        height: 220px
+    &__rectangle-orange
+        top: 160px
+        left: -30px
+        transform: rotate(-51deg)
+        z-index: 50
+        background-color: $color-orange
+        width: 618px
+        height: 220px
+    &__rectangle-grey
+        top: 200px
+        left: 10px
+        transform: rotate(-36.15deg)
+        background-color: $color-grey
+        width: 608px
+        height: 220px
+.right-wrapper
+    max-width: 372px
+    position: absolute
+    z-index: 10
+    top: 150px
+    right: 76px
+    &__icons-box
+        margin-bottom: 4px
+        padding-left: 10px
+    &__title
+        margin-bottom: 10px
+    &__text
+        margin-bottom: 20px 
+        font-size: 16px
+        font-weight: 300
+.icons
+    display: flex
+    gap: 17px
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: $color-grey
+        width: 40px
+        height: 40px
+        border: 1px solid $color-blue
+        border-radius: 50%
+        font-size: 26px
+.title
+    font-size: 72px
+    font-weight: 700
+.buttons
+    display: flex  
+    gap: 32px
+    &__main-btn
+        width: 200px
+        height: 60px
+        background-color: $color-orange
+        border: none
+        border-radius: 100px
+        color: white
+        font-size: 18px 
+    &__icon-btn
+        display: flex
+        gap: 12px
+        align-items: center
+.elipse
+    background: linear-gradient(144deg, #ed7b50 0%, #488aea 54.17%, #2c2c2c 100%)
+    width: 194px
+    height: 194px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    &__subtract
+        background-color: white
+        border-radius: 50%
+        width: 130px
+        height: 130px
+        &_big
+            width: 190px
+            height: 190px
+    &_big
+        width: 282px
+        height: 282px
