@@ -5,8 +5,25 @@ $color-blue: #5290ea
 $color-orange: #f28b64
 $color-grey: #e2e2e2
 
+@font-face
+    font-family: 'Montserrat'
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: 'Montserrat'
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2')
+    font-weight: 600
+    font-style: normal
+    font-display: swap
+
 html
-    font-family: sans-serif
+    font-family: 'Montserrat', sans-serif
+a
+    text-decoration: none
+    color: inherit
 .bg-orange
     background: $color-orange
 .bg-blue
@@ -181,8 +198,8 @@ html
     &__elipse
         &_left-down
             position: absolute
-            left: 8%
-            top: 40%
+            left: 6%
+            top: 53%
         &_right-top
             position: absolute
             bottom: 62%
@@ -198,3 +215,54 @@ html
     &__descr
         font-weight: 400
         font-size: 18px
+.third-section
+    background: #f0f0f0
+    position: relative
+    padding: 28px 0 64px
+    overflow: hidden
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__left-wrapper
+        padding-left: 167px
+        position: relative
+        z-index: 10
+    &__right-wrapper
+        max-width: 480px
+        min-height: 548px
+        position: relative
+        z-index: 10
+    &__right-title
+        margin-bottom: 20px
+    &__text
+        margin-bottom: 33px
+        font-weight: 400
+        font-size: 18px
+    &__left-elipse
+        position: absolute
+        top: 140px
+        left: 110px
+    &__figure
+        position: absolute
+        top: 240px
+        left: 50px
+    &__right-elipse
+        position: absolute
+        right: -120px
+        top: -120px
+.footer
+    padding: 26px 0 42px
+    &__container
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__img
+        position: absolute
+        left: -250px
+        bottom: 0
+    &__wrapper
+        position: relative
+        z-index: 10
+    &__title
+        margin-bottom: 20px

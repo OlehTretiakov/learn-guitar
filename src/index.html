@@ -7,11 +7,28 @@
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://kit.fontawesome.com/496b876785.js" crossorigin="anonymous"></script>
   <title>Guitar lessons</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="./icons/fav/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./icons/fav/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./icons/fav/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./icons/fav/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./icons/fav/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./icons/fav/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./icons/fav/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./icons/fav/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icons/fav/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/fav/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icons/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./icons/fav/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./icons/fav/favicon-16x16.png">
+  <link rel="manifest" href="./icons/fav/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./icons/fav/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
   <!-- main section -->
-  <section class="main-section">
+  <section class="main-section" id="about">
 
     <!-- navigation -->
     <div class="container main-section__nav-container">
@@ -22,9 +39,15 @@
       </header>
       <nav class="main-section__nav nav-menu">
         <ul class="nav-menu__list">
-          <li class="nav-menu__item">About me</li>
-          <li class="nav-menu__item">Lessons</li>
-          <li class="nav-menu__item">Enroll</li>
+          <a href="#about">
+            <li class="nav-menu__item">About me</li>
+          </a>
+          <a href="#lessons">
+            <li class="nav-menu__item">Lessons</li>
+          </a>
+          <a href="#enroll">
+            <li class="nav-menu__item">Enroll</li>
+          </a>
         </ul>
       </nav>
     </div>
@@ -76,61 +99,61 @@
   </section>
 
   <!-- teaching -->
-  <section class="teaching">
+  <section class="teaching" id="lessons">
     <div class="container">
       <h2 class="teaching__title title">Teach you</h1>
 
-      <!-- teaching box -->
-      <div class="teaching__box">
+        <!-- teaching box -->
+        <div class="teaching__box">
 
-        <div class="teaching__item bg-grey">
-          <img src="./img/electro.png" alt="" class="teaching__img">
-          <div class="teaching__instrument-name">Electro <br> guitar</div>
-        </div>
-        
-        <div class="teaching__item bg-orange">
-          <img src="./img/aqustic.png" alt="" class="teaching__img">
-          <div class="teaching__instrument-name">Aqustic-new <br> guitar</div>
-        </div>
-        <div class="teaching__item bg-blue">
-          <img src="./img/ukuleli.png" alt="" class="teaching__img">
-          <div class="teaching__instrument-name">Ukulele <br> guitar</div>
-        </div>
+          <div class="teaching__item bg-grey">
+            <img src="./img/electro.png" alt="" class="teaching__img">
+            <div class="teaching__instrument-name">Electro <br> guitar</div>
+          </div>
 
-      </div>
-      <!-- teaching review -->
-      <div class="teaching__review">
-        
-        <div class="review-item">
-          <img src="./icons/ii-1.svg" alt="" class="review-item__img">
-          <div class="review-item__descr">
-            <span>7</span> <br> years <br> by teaching
+          <div class="teaching__item bg-orange">
+            <img src="./img/aqustic.png" alt="" class="teaching__img">
+            <div class="teaching__instrument-name">Aqustic-new <br> guitar</div>
           </div>
-        </div>
-        
-        
-        <div class="review-item">
-          <img src="./icons/ii-2.svg" alt="" class="review-item__img">
-          <div class="review-item__descr">
-            <span>276</span> <br> reviews <br> width a 5-stars
+          <div class="teaching__item bg-blue">
+            <img src="./img/ukuleli.png" alt="" class="teaching__img">
+            <div class="teaching__instrument-name">Ukulele <br> guitar</div>
           </div>
-        </div>
-        
-        <div class="review-item">
-          <img src="./icons/ii-3.svg" alt="" class="review-item__img">
-          <div class="review-item__descr">
-            <span>314</span> <br> students <br> are tought
-          </div>
-        </div>
-        
-        <div class="review-item">
-          <img src="./icons/ii-4.svg" alt="" class="review-item__img">
-          <div class="review-item__descr">
-            <span>2000</span> <br> hours <br> total teaching
-          </div>
-        </div>
 
-      </div>
+        </div>
+        <!-- teaching review -->
+        <div class="teaching__review">
+
+          <div class="review-item">
+            <img src="./icons/ii-1.svg" alt="" class="review-item__img">
+            <div class="review-item__descr">
+              <span>7</span> <br> years <br> by teaching
+            </div>
+          </div>
+
+
+          <div class="review-item">
+            <img src="./icons/ii-2.svg" alt="" class="review-item__img">
+            <div class="review-item__descr">
+              <span>276</span> <br> reviews <br> width a 5-stars
+            </div>
+          </div>
+
+          <div class="review-item">
+            <img src="./icons/ii-3.svg" alt="" class="review-item__img">
+            <div class="review-item__descr">
+              <span>314</span> <br> students <br> are tought
+            </div>
+          </div>
+
+          <div class="review-item">
+            <img src="./icons/ii-4.svg" alt="" class="review-item__img">
+            <div class="review-item__descr">
+              <span>2000</span> <br> hours <br> total teaching
+            </div>
+          </div>
+
+        </div>
     </div>
 
     <div class="teaching__elipse_left-down elipse">
@@ -139,9 +162,63 @@
     <div class="teaching__elipse_right-top elipse">
       <div class="elipse__subtract"></div>
     </div>
-    
+
 
   </section>
+
+  <section class="third-section" id="enroll">
+    <div class="container third-section__container">
+
+      <div class="third-section__left-wrapper">
+        <h2 class="title third-section__left-title">Learning</h2>
+      </div>
+
+      <div class="third-section__right-wrapper">
+        <h2 class="title third-section__right-title">Train <br> virtuosos</h2>
+        <p class="third-section__text">Learning to play the guitar is an exciting journey that combines creativity and
+          discipline. Begin by mastering basic chords like C, G, and D, as they form the foundation of many songs.
+          Practice strumming techniques to develop rhythm and explore finger exercises to build strength.
+          Patience and persistence will lead to success!
+          <br> <br>
+          Patience and persistence will lead to success!
+          Consistency is
+          key—set aside daily time to practice. As you progress, try learning simple melodies and eventually experiment
+          with your own music. Patience and persistence will lead to success!
+        </p>
+        <div class="third-section__buttons buttons">
+          <button class="buttons__main-btn">Book your first <br> lesson</button>
+          <div class="info__icon-btn buttons__icon-btn">
+            <img src="./icons/chat-icon.svg" alt="">
+            <div class="buttons__text">Any questions?</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="third-section__left-elipse elipse elipse_big">
+        <div class="elipse__subtract elipse__subtract_big"></div>
+      </div>
+      <img src="./icons/subtract.svg" alt="" class="third-section__figure">
+    </div>
+    <div class="third-section__right-elipse elipse elipse_big">
+      <div class="elipse__subtract elipse__subtract_big"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <img src="./img/footer-guitar.png" alt="" class="footer__img">
+      <div class="footer__wrapper">
+        <h2 class="footer__title title">Sign up for <br> your trial lesson</h2>
+
+        <div class="footer__icons-box icons">
+          <div class="icons__item"><i class="fa-brands fa-skype"></i></div>
+          <div class="icons__item"><i class="fa-brands fa-vk"></i></div>
+          <div class="icons__item"><i class="fa-brands fa-telegram"></i></div>
+          <div class="icons__item"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 </body>
