@@ -374,6 +374,18 @@ html {
   font-family: sans-serif;
 }
 
+.bg-orange {
+  background: #f28b64;
+}
+
+.bg-blue {
+  background: #5290ea;
+}
+
+.bg-grey {
+  background: #e2e2e2;
+}
+
 .container {
   position: relative;
   max-width: 1180px;
@@ -407,7 +419,7 @@ html {
 .main-section__first-elipse {
   position: absolute;
   top: 129px;
-  right: 34px;
+  right: 40px;
 }
 .main-section__second-elipse {
   position: absolute;
@@ -534,4 +546,75 @@ html {
 .elipse_big {
   width: 282px;
   height: 282px;
+}
+
+.teaching {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 54px;
+}
+.teaching__title {
+  margin-bottom: 50px;
+}
+.teaching__box {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.teaching__item {
+  position: relative;
+  z-index: 10;
+  width: 360px;
+  height: 360px;
+  border-radius: 10px;
+}
+.teaching__img {
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+}
+.teaching__instrument-name {
+  position: absolute;
+  top: 45%;
+  right: -60px;
+  display: block;
+  width: 90%;
+  transform: rotate(90deg);
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+}
+.teaching__review {
+  padding: 4px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.teaching__elipse_left-down {
+  position: absolute;
+  left: 8%;
+  top: 40%;
+}
+.teaching__elipse_right-top {
+  position: absolute;
+  bottom: 62%;
+  right: 8%;
+}
+
+.review-item {
+  width: 217px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.review-item span {
+  font-weight: 600;
+  font-size: 48px;
+}
+.review-item__descr {
+  font-weight: 400;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

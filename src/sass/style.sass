@@ -7,6 +7,12 @@ $color-grey: #e2e2e2
 
 html
     font-family: sans-serif
+.bg-orange
+    background: $color-orange
+.bg-blue
+    background: $color-blue
+.bg-grey
+    background: $color-grey
 .container
     position: relative
     max-width: 1180px
@@ -21,9 +27,9 @@ html
 .main-section
     position: relative
     padding-top: 20px
-    min-height: 800px   
+    min-height: 800px
     background-color: #f0f0f0
-    overflow: hidden    
+    overflow: hidden
     &__nav-container
         display: flex
         align-items: center
@@ -34,7 +40,7 @@ html
     &__first-elipse
         position: absolute
         top: 129px
-        right: 34px
+        right: 40px
     &__second-elipse
         position: absolute
         right: -120px
@@ -81,7 +87,7 @@ html
     &__title
         margin-bottom: 10px
     &__text
-        margin-bottom: 20px 
+        margin-bottom: 20px
         font-size: 16px
         font-weight: 300
 .icons
@@ -101,7 +107,7 @@ html
     font-size: 72px
     font-weight: 700
 .buttons
-    display: flex  
+    display: flex
     gap: 32px
     &__main-btn
         width: 200px
@@ -110,7 +116,7 @@ html
         border: none
         border-radius: 100px
         color: white
-        font-size: 18px 
+        font-size: 18px
     &__icon-btn
         display: flex
         gap: 12px
@@ -134,3 +140,61 @@ html
     &_big
         width: 282px
         height: 282px
+.teaching
+    position: relative
+    padding-top: 32px
+    padding-bottom: 54px
+    &__title
+        margin-bottom: 50px
+    &__box
+        margin-bottom: 20px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 30px
+    &__item
+        position: relative
+        z-index: 10
+        width: 360px
+        height: 360px
+        border-radius: 10px
+    &__img
+        position: absolute
+        bottom: 0
+        left: -10px
+    &__instrument-name
+        position: absolute
+        top: 45%
+        right: -60px
+        display: block
+        width: 90%
+        transform: rotate(90deg)
+        text-align: center
+        font-weight: 600
+        font-size: 36px
+    &__review
+        padding: 4px 0
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-evenly
+        gap: 20px
+    &__elipse
+        &_left-down
+            position: absolute
+            left: 8%
+            top: 40%
+        &_right-top
+            position: absolute
+            bottom: 62%
+            right: 8%
+.review-item
+    width: 217px
+    display: flex
+    align-items: center
+    gap: 16px
+    span
+        font-weight: 600
+        font-size: 48px
+    &__descr
+        font-weight: 400
+        font-size: 18px
